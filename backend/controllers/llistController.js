@@ -20,7 +20,7 @@ const getLlist = asyncHandler(async (req, res) => {
   } 
   
   catch (err) {
-    throw new Error("idk dawg");
+    throw new Error(err);
   }
 
 });
