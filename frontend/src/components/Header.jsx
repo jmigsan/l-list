@@ -5,8 +5,8 @@ const Header = () => {
   return (
     <div>
       <nav className='header'>
-        <span className='float-right'><FirebaseAuth /></span>
-        <h1> <Link to={"/"}>L-List</Link> </h1>
+        <span className='float-right'><FirebaseAuth /></span>            
+          <span className='logoText'><Link to={"/"}>L-List</Link></span>
       </nav>
     </div>
   )

@@ -7,10 +7,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-a {
-  text-decoration: none;
-}
-
 .l-item {
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   width: 60%;
@@ -84,7 +80,17 @@ a {
 .header {
   padding-left: 25%;
   padding-right: 25%;
+  padding-top: 1.25em;
+  a {
+    text-decoration: none;
+    color: #f39c12;
+  };
 }
+
+.logoText {
+  font-size: 2em;
+  font-weight: bold;
+};
 
 .createLForm {
   padding-left: 25%;
