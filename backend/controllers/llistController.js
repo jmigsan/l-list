@@ -15,7 +15,7 @@ const unlinkFile = util.promisify(fs.unlink);
 // @access Public
 const getLlist = asyncHandler(async (req, res) => {
   try {
-    const entireLlist = await pool.query("SELECT * FROM llist");
+    const entireLlist = await pool.query("SELECT * FROM llist ORDER BY l_date DESC");
     res.status(200).json(entireLlist.rows);
   } 
   
@@ -186,6 +186,9 @@ const uploadContentL = asyncHandler(async (req, res) => {
   }
 });
 
+// @desc view content of L from B2
+// @route GET /api/llist/upload/:key
+// @access Public
 const getContentLKey = (req, res) => {
   try {
     const key = req.params.key;

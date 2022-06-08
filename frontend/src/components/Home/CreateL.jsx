@@ -72,7 +72,7 @@ const CreateL = () => {
             name="l_text"
             value={ L.l_text }
             onChange={ handleChange }
-            autocomplete="off"
+            autoComplete="off"
           />
 
           <input 

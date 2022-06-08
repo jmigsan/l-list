@@ -14,7 +14,7 @@ const initialState = {
   isUploading: false,
   isDeleting: false,
   message: '',
-  llistSort: 'oldest',
+  llistSort: 'newest',
 };
 
 export const createL = createAsyncThunk('llist/create', async (LData, { getState, thunkAPI }) => {
