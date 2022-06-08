@@ -117,7 +117,7 @@ const updateL = asyncHandler(async (req, res) => {
     }
 
     if (!req.body.l_text && req.body.l_content) {
-      const updated_l = await pool.query("UPDATE llist l_content = $1, l_date = $2 WHERE l_id = $3 RETURNING *", [req.body.l_content, l_date, req.params.id]);
+      const updated_l = await pool.query("UPDATE llist SET l_content = $1, l_date = $2 WHERE l_id = $3 RETURNING *", [req.body.l_content, l_date, req.params.id]);
       res.status(200).json({
         l_id: updated_l.rows[0].l_id,
         l_text: updated_l.rows[0].l_text,
