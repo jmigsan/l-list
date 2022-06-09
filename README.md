@@ -13,5 +13,5 @@ Redux-Toolkit,
 Sass CSS
 
 Images uploaded to Backblaze B2 Cloud Storage by using AWS S3 SDK.
-Server-side authentication using Firebase Authentication SDK and Firebase Admin SDK.
+Authentication with Firebase Authentication SDK and Firebase Admin SDK on the server.
 Hosted on Heroku.
